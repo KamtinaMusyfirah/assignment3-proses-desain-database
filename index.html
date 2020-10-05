@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <title>Proses Desain Database</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="top-header">
+      <nav class="navbar header-nav navbar-expand-lg">
+          <div class="container-fluid">
+            <nav class="navbar ">
+              <span class="navbar-brand mb-0 h1">Kamtina Musyfirah</span>
+            </nav>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                  <ul class="navbar-nav">
+                      <li><a class="nav-link active" href="#">Home</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/basdat-assignment2/">Evaluation Plan</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/basdat-assignment1/">Query</a></li>
+                      <li><a class="nav-link" href="#">Database Design</a></li>
+                      <li><a class="nav-link" href="#">About</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <!-- End header -->
+
+  <!--Carousel-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Basis Data II</h1>
+    </div>
+  </div>
+  <!--End Carousel-->
+  <h1>PROSES DESAIN DATABASE</h1>
+
+  <!-- section -->
+  <div class="container">
+    <div class="card">
+        <div class="contentBx">
+            <h2>1. Requirements Analysis</h2>
+            <p>Langkah pertama dalam merancang aplikasi database adalah memahami data apa yang harus disimpan dalam database,
+              aplikasi apa yang harus dibangun diatasnya, dan operasi apa yang paling sering dan cenderung pada persyaratan kinerja.
+              Dengan kata lain, kita harus mencari tahu apa yang user inginkan dari database.
+            </p>
+            <p>
+              Proses identifikasi dan analisa kebutuhan-kebutuhan data disebut
+              Requirements Analysis. Untuk menentukan kebutuhan-kebutuhan
+              suatu sistem database, pertama-tama harus mengenal bagian-bagian lain dari
+              sistem informasi yang akan berinteraksi dengan sistem database, termasuk
+              user yang telah ada dan user yang baru serta aplikasi-aplikasinya. 
+              Kebutuhan-kebutuhan dari para pemakai dan aplikasi inilah yang
+              kemudian dikumpulkan dan dianalisa
+            </p>
+            <p>
+              Berikut ini adalah aktifitas-aktifitas pengumpulan data dan analisa:
+              <ol>
+                <li>Menentukan kelompok user dan bidang-bidang aplikasinya</li>
+                <li>Peninjauan dokumentasi yang ada</li>
+                <li>Analisa lingkungan operasi dan pemrosesan data</li>
+                <li>Daftar pertanyaan dan wawancara</li>
+              </ol>
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>2. Conceptual Database Design</h2>
+          <p>
+            Informasi yang telah dikumpulkan dalam step Requirements Analysis digunakan untuk mengembangkan deskripsi high-level yang akan disimpan dalam database,
+            bersamaan dengan kendala yang diketahui yang dapat menahan data ini. Langkah ini sering dilakukan dengan menggunakan model ER.
+            Model ER adalah salah satu dari beberapa model high-level atau semantik, model data yang digunakan dalam desain database.
+            Tujuannya yaitu untuk menciptakan deskripsi sederhana tentang data yang paling dekat dengan bagaimana user dan develop memikirkan data.
+            Desain awal harus cukup tepat untuk memungkinkan terjemahan yang mudah menjadi model data yang didukung oleh sistem database komersial (yang dalam praktiknya, berarti model relasional). 
+          </p>
+          <p>
+            Step Conceptual Database Design mempunyai dua aktivitas paralel, yaitu:
+            <ol>
+              <li>Perancangan skema konseptual
+                <p>
+                  menguji kebutuhan-kebutuhan data dari suatu database yang merupakan
+                  hasil dari step 1, dan menghasilkan sebuah conceptual database schema
+                  pada DBMS independent model data high-level seperti EER (enhanced
+                  entity relationship) model.
+                </p>
+              </li>
+              <li>Perancangan transaksi
+              <p>
+                menguji aplikasi-aplikasi database dimana kebutuhan-kebutuhannya telah
+                dianalisa pada step 1, dan menghasilkan perincian transaksi-transaksi ini.
+              </p>
+              </li>
+            </ol>
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>3. Pemilihan DBMS</h2>
+          <p>
+            Pemilihan database di tentukan oleh beberapa faktor, diantaranya : faktor teknis,
+            ekonomi, dan organisasi. 
+            <p>
+              Faktor teknis:
+              <ol>
+                <li>DBMS (relational, hirarki, atau jaringan)</li>
+                <li>Struktur penyimpan dan akses path yang didukung DBMS</li>
+                <li>Ketersediaan interface user dan pemrogram, tipe
+                  bahasa query high-level, ketersediaan alat bantu
+                  pengembangan, kemampuan berhubungan dengan DBMS lain
+                  melalui media standard</li>
+                <li>Pilihan arsitektur yang berhubungan dengan operator client-server dan lain sebagainya.</li>
+              </ol>
+            </p>
+            <p>
+              Faktor ekonomi:
+              <ol>
+                <li>Software Acquisiton Cos</li>
+                <li>Maintenance Cost</li>
+                <li>Hardware Acquisition Cost</li>
+                <li>Database Creation and Conversion Cost</li>
+                <li>Personal cost</li>
+                <li>Training cost</li>
+                <li>Operating cost :</li>
+              </ol>
+            </p>
+            <p> 
+              Faktor Organisasi:
+            <ol>
+              <li>Struktur data</li>
+              <li>Familiarity of Personal with the System</li>
+              <li>Availability of Vendor Service</li>
+            </ol>
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>4. Logical Database Design</h2>
+          <p>
+            Kita harus memilih DBMS untuk menerapkan desain database, dan mengubah desain database serta mengubah conceptual database design menjadi skema database
+            dalam model data dari DBMS yang dipilih. Yang dipertimbangkan hanyalah DBMS relasional, dan karena itu, tugas dalam logical design step adalah mengubah ER 
+            menjadi skema database relational. Hasilnya adalah conceptual schema, biasa disebut logical schema, dalam model data relasional.
+          </p>
+          <p>
+            Hasil dari step ini memakai perintah-perintah DDL dalam bahasa DBMS yang
+            dipilih yang menentukan tingkat skema konseptual dan eksternal dari sistem
+            database. Tetapi dalam beberapa hal, perintah-perintah DDL memasukkan
+            parameter-parameter rancangan fisik sehingga DDL yang lengkap harus
+            menunggu sampai Physical Database Design step telah lengkap.
+          </p>
+          <p>
+            Proses pemetaan ada dua bentuk :
+            <ol>
+              <li>Pemetaan yang Tidak Tergantung pada Sistem (SystemIndependet Mapping )
+                <p>
+                  Pada bentuk ini, pemetaan tidak mempertimbangkan karakteristik
+                  khusus atau kasus khusus yang diaplikasikan ke implementasi DBMS
+                  dari model data.
+                </p>
+              </li>
+              <li>Penyesuaian Skema ke DBMS yang Spesifik (Tailoring the Schemas to Specific DBMS)
+                <p>
+                  DBMS yang berbeda mengimplementasikan model data dengan
+                  menggunakan pemodelan khusus. Hasilnya merupakan pernyataan DDL
+                  dari DBMS yang dipilih
+                </p>
+              </li>
+            </ol>
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>5. Physical Database Design</h2>
+          <p>
+            Proses pemilihan struktur penyimpanan dan jalur akses
+            pada file-file database untuk mencapai penampilan yang
+            terbaik pada bermacam aplikasi.
+            Dirancang secara spesifikasi untuk database yang
+            disimpan yang berhubungan dengan struktur-struktur
+            penyimpanan fisik, penempatan record dan jalur akses.
+          </p>
+          <p>
+            Beberapa petunjuk dalam pemilihan physical database design:
+            <ol>
+              <li>Waktu Respon
+                <p> Waktu transaksi database untuk menerima respon selama eksekusi.
+                  Waktu respon dipengaruhi oleh waktu akses database untuk data item yang ditunjuk oleh suatu transaksi.
+                </p>
+              </li>
+              <li>Penggunaan Ruang Penyimpanan
+                <p>
+                  Jumlah ruang penyimpanan yang digunakan oleh file database dan struktur- struktur jalur akses.
+                </p>
+              </li>
+              <li>Transaction Throughput
+                <p>
+                  Rata-rata jumlah transaksi yang dapat diproses per menit oleh
+                  sistem database, dan merupakan parameter kritis dari
+                  sistem transaksi.
+                </p>
+              </li>
+            </ol>
+          </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="contentBx">
+          <h2>6. Application and Security Design</h2>
+          <p>
+            Setiap project perangkat lunak yang melibatkan DBMS harus mempertimbangkan aspek aplikasi yang melampaui database itu sendiri.
+            Setiap peran dalam database, harus diidentifikasi bagian-bagian mana yang boleh diakses dan tidak boleh diakses dan harus dipastikan
+            bahwa peraturan akses ini berlaku. 
+          </p>
+      </div>
+   </div>
+  </div>
+  <!--End Carousel-->
+
+  <div class="about1">
+    <h2>ABOUT</h2>
+    <hr>
+  </div>
+
+  <div class="about">
+    <div class="box">
+      <div class="icon">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+      </div>
+      <div class="details">
+        <h3>Sinjai</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="icon">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </div>
+      <div class="details">
+        <h3>KamtinaMusyfirah</h3>
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="icon">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </div>
+      <div class="details">
+        <h3>kamtinamusyfirah12@gmail.com</h3>
+      </div>
+    </div>
+  </div>
+  <!-- end section -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
